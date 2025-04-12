@@ -73,8 +73,8 @@ body {
 
 .brands-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -82,11 +82,11 @@ body {
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: transform 0.3s;
-  opacity: 0; /* البداية مخفية للأنيميشن */
+  opacity: 0;
 }
 
 .brand-card:hover {
@@ -94,17 +94,18 @@ body {
 }
 
 .brand-card img {
-  width: 80px;
+  width: 140px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .brand-card h3 {
   margin: 10px 0 5px;
+  font-size: 1.4rem;
 }
 
 .brand-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #666;
 }
 
@@ -191,13 +192,27 @@ button:hover {
   animation: fadeUp 0.6s ease forwards;
 }
 
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-card {
+    padding: 20px;
+  }
+
+  .brand-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .brand-card img {
+    width: 120px;
+  }
+}
+
 @media (max-width: 600px) {
   .nav a {
     display: block;
     margin: 10px 0;
-  }
-
-  .brands-grid {
-    grid-template-columns: 1fr;
   }
 }
