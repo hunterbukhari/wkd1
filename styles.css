@@ -109,6 +109,27 @@ body {
   color: #666;
 }
 
+/* ألوان مختلفة لكل علامة */
+.brand-card.florina {
+  border-top: 5px solid #d2691e; /* لون قريب من القهوة */
+}
+
+.brand-card.mmmm {
+  border-top: 5px solid #8e44ad; /* لون بنفسجي */
+}
+
+.brand-card.ritchi {
+  border-top: 5px solid #2c3e50; /* لون أنيق */
+}
+
+.brand-card.willies {
+  border-top: 5px solid #e67e22; /* برتقالي شبابي */
+}
+
+.brand-card.takaddum {
+  border-top: 5px solid #2980b9; /* أزرق رسمي */
+}
+
 .achievements-list {
   list-style: none;
   padding: 0;
